@@ -1,5 +1,6 @@
 body{
     background: rgb(247, 105, 2);
+    margin: 0px;
 }
 
 h1{
@@ -44,5 +45,5 @@ img{
 }
 
 .navbar li{
-    float: left;
+    float:left;
 }
