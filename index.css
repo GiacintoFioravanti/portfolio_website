@@ -36,7 +36,7 @@ img{
     color: rgb(247, 105, 2);
     text-decoration: none;
     padding: 15px;
-    display: block;
+    display: flex;
     text-align: center;
 }
 
