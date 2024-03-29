@@ -15,15 +15,6 @@ h2{
     color: white;
 }
 
-img{
-    background-color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    height: 25%;
-}
-
 .navbar ul{
     list-style-type: none;
     background-color: white;
@@ -46,4 +37,37 @@ img{
 
 .navbar li{
     float:left;
+}
+
+.container{
+    background-color: black;
+    height: 70vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.container div{
+    background: white;
+    border-radius: 15px;
+    height: 60vh;
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: auto;
+    height: 90%;
 }
