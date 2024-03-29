@@ -25,9 +25,10 @@ img{
 
 .navbar ul{
     list-style-type: none;
-    background: white;
+    background-color: white;
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
 }
 
 .navbar a{
@@ -40,4 +41,8 @@ img{
 
 .navbar a:hover{
     background: rgb(208, 211, 212);
+}
+
+.navbar li{
+    float: left;
 }
