@@ -1,0 +1,115 @@
+body {
+    background: rgb(247, 105, 2);
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+p {
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(247, 105, 2);
+    color: white;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: rgb(247, 105, 2);
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: rgb(208, 211, 212);
+}
+
+.navbar li {
+    float: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid black;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    max-width: 85%;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px; 
+}
+
+.buttons :hover{
+    background-color: black;
+}
+
+.buttons button {
+    margin: 0;
+}
+
+img {
+    display: flex;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.navimg{
+    border-width: 1px;
+    float: right;
+    max-width: 25px;
+    max-height: 35px;
+    margin-right: 25px;
+}
+
+.icon{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    max-width: 100px;
+    max-height: 100px;
+    border: 5px solid black;
+}
