@@ -1,5 +1,5 @@
 body {
-    background: rgb(247, 105, 2);
+    background-image: url("../Pictures/background3.png");
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,12 +21,14 @@ p {
     color: black;
     font-size: large;
     text-align: center;
+    padding-left: 25px;
+    margin: auto;
 }
 
 button {
     display: inline-block;
     text-align: center;
-    background-color: rgb(247, 105, 2);
+    background-color: rgb(150, 0, 209);
     color: white;
     margin: 5px;
     border: 3px solid black;
@@ -47,7 +49,7 @@ button {
 }
 
 .navbar a {
-    color: rgb(247, 105, 2);
+    color: rgb(150, 0, 209);
     text-decoration: none;
     padding: 15px;
     text-align: center;
@@ -72,7 +74,7 @@ button {
     margin: 0 auto;
     padding: 25px;
     box-sizing: border-box;
-    max-width: 85%;
+    max-width: 75%;
 }
 
 
@@ -93,7 +95,10 @@ button {
 }
 
 img {
-    display: flex;
+    display: block;
+    margin-bottom: 15px;
+    max-width: 30%;
+    max-height: 25%;
     border-radius: 15px;
     border: 5px solid black;
 }
@@ -106,10 +111,8 @@ img {
     margin-right: 25px;
 }
 
-.icon{
-    margin-top: 20px;
-    margin-bottom: 5px;
-    max-width: 100px;
-    max-height: 100px;
-    border: 5px solid black;
+.section{
+    display: inline-flex;
+    margin: 25px;
+    text-align: center;
 }
