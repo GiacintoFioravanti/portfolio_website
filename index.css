@@ -604,3 +604,80 @@ section:not(:last-child)::after {
     max-width: 600px;
     margin: 0 auto;
 }
+
+/* Contact page specific styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: visible;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-link {
+    margin-top: 1.5rem;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.contact-button i {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* Keep the existing project-image styles */
+.project-image {
+    width: 40%; /* Make icons smaller than project images */
+    padding-bottom: 40%;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .contact-button {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .project-image {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
