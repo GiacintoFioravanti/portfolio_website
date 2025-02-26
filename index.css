@@ -555,3 +555,52 @@ section:not(:last-child)::after {
 .project-image img {
     animation: imageLoadFade 0.5s ease-in;
 }
+
+/* About page specific styles */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.about-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Use the same project-image styles you already have */
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .about-grid {
+        gap: 4rem;
+    }
+}
+
+/* Hero section specific to about page */
+.hero {
+    background-color: var(--gray-light);
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.hero .tagline {
+    font-size: 1.25rem;
+    color: var(--gray-medium);
+    max-width: 600px;
+    margin: 0 auto;
+}

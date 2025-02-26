@@ -1,33 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="aboutme.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../project/projects.html">Projects</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
-                <img class="navimg" src="../Pictures/MyCourses Pic.jpg" alt="Headshot Picture">
-            </ul>
-        </nav>
-        <h1>Welcome to my about me!</h1>
-        <div class="container">
-            <div class="section">
-                <img src="../Pictures/hiking.jpeg" alt="Hiking Picture">
-                <p>Over Spring Break in 2024, my friends and I went on a backpacking trip in Georgia along the Appalachian Trail! I truly enjoy being outdoors and exploring the beautiful world around me.</p>
-            </div>
-            <div class="section">
-                <img src="../Pictures/snowboard.jpeg" alt="Snowboarding Picture">
-                <p>During the winter season I love to go snowboarding with friends! This year I taught my sister how to snowboard and she had a blast. I'm currently spending more time in the terrian park to learn more tricks! </p>
-            </div>
-            <div class="section">
-                 <img src="../Pictures/football.jpeg" alt="Highschool Football Picture">
-                 <p>While in highschool I played Football as an offensive and defensive linemen. During my senor season, our team went undefeated in the regular season and made it to states semi-finals.</p>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Giacinto Fioravanti - Software Engineer">
+    <title>About Me | Giacinto Fioravanti</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img class="nav-img" src="../Pictures/MyCourses Pic.jpg" alt="Giacinto Fioravanti">
+            <span class="brand-name">Giacinto Fioravanti</span>
         </div>
-    </body>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../project/projects.html">Projects</a></li>
+            <li><a href="aboutme.html" class="active">About Me</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>About Me</h1>
+            <p class="tagline">Get to know me beyond the code</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-grid">
+            <div class="about-card">
+                <div class="project-image">
+                    <img src="../Pictures/hiking.jpeg" alt="Hiking Picture">
+                </div>
+                <div class="project-info">
+                    <h3>Hiking Adventures</h3>
+                    <p>Over Spring Break in 2024, my friends and I went on a backpacking trip in Georgia along the Appalachian Trail! I truly enjoy being outdoors and exploring the beautiful world around me.</p>
+                    <div class="project-tags">
+                        <span class="tag">Hiking</span>
+                        <span class="tag">Outdoors</span>
+                        <span class="tag">2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="project-image">
+                    <img src="../Pictures/snowboard.jpeg" alt="Snowboarding Picture">
+                </div>
+                <div class="project-info">
+                    <h3>Snowboarding</h3>
+                    <p>During the winter season I love to go snowboarding with friends! This year I taught my sister how to snowboard and she had a blast. I'm currently spending more time in the terrain park to learn more tricks!</p>
+                    <div class="project-tags">
+                        <span class="tag">Winter Sports</span>
+                        <span class="tag">Snowboarding</span>
+                        <span class="tag">Adventure</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="project-image">
+                    <img src="../Pictures/football.jpeg" alt="Highschool Football Picture">
+                </div>
+                <div class="project-info">
+                    <h3>Football Career</h3>
+                    <p>While in highschool I played Football as an offensive and defensive lineman. During my senior season, our team went undefeated in the regular season and made it to states semi-finals.</p>
+                    <div class="project-tags">
+                        <span class="tag">Football</span>
+                        <span class="tag">Athletics</span>
+                        <span class="tag">Team Sports</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/giacinto-fioravanti-b5aba1264/" target="_blank" rel="noopener" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Giacinto Fioravanti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
