@@ -1,125 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Giacinto Fioravanti - Software Engineering Portfolio">
-    <title>Giacinto Fioravanti | Software Engineer</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- Add Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-brand">
-            <img class="nav-img" src="Pictures/MyCourses Pic.jpg" alt="Giacinto Fioravanti">
-            <span class="brand-name">Giacinto Fioravanti</span>
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project/projects.html">Projects</a></li>
+                <li><a href="aboutme/aboutme.html">About Me</a></li>
+                <li><a href="contact/contact.html">Contact</a></li>
+                <img class="navimg" src="Pictures/MyCourses Pic.jpg" alt="Headshot Picture">
+            </ul>
+        </nav>
+        <h1>Welcome to my portfolio!</h1>
+        <h2>My name is Giacinto Fioravanti and I am a Software Engineering student at Rochester Institute of Technology.</h2>
+        <div class="container">
+            <img src="Pictures/IMG_4968.JPG" alt="Picture of Myself">
+            <p>Hi, my name is Giacinto Fioravanti. I’m currently a third-year student at Rochester Institute of Technology working towards a BS in Software Engineering. In previous programming courses that I have taken, I have been a teacher's assistant for the class where I guided others to success. I am a part of the 2027 graduating class and will be looking for a leadership position within the software development field.</p>
+            <div class="buttons">
+                <button onclick="window.location.href='aboutme/aboutme.html'">About Me</button>
+                <button onclick="window.location.href='project/projects.html'">Projects</button>
+                <button onclick="window.location.href='contact/contact.html'">Contact</button>
+            </div>
+
         </div>
-        <div class="nav-toggle" id="navToggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="project/projects.html">Projects</a></li>
-            <li><a href="aboutme/aboutme.html">About Me</a></li>
-            <li><a href="contact/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Software Engineering Student</h1>
-            <p class="tagline">Building innovative solutions at Rochester Institute of Technology</p>
-            <div class="hero-cta">
-                <a href="project/projects.html" class="btn btn-primary">View My Work</a>
-                <a href="contact/contact.html" class="btn btn-secondary">Get in Touch</a>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <section class="about-preview">
-            <div class="profile-image">
-                <img src="Pictures/IMG_4968.JPG" alt="Giacinto Fioravanti">
-            </div>
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>Hi, I'm Giacinto Fioravanti, a third-year Software Engineering student at Rochester Institute of Technology. With experience as a teaching assistant, I've developed strong leadership and mentoring skills while helping others succeed in programming courses.</p>
-                <p>Class of 2027 | Aspiring Software Development Leader</p>
-                <div class="skills">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">AWS</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <!-- Add your project cards here -->
-                <div class="project-card">
-                    <div class="project-video">
-                        <video controls>
-                            <source src="Chat_App_Demo.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="project-info">
-                        <h3>Real-Time Chat App</h3>
-                        <p>A full-stack real-time messaging application that allows users to connect and message with their friends! </p>
-                        <div class="project-tags">
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-            <div class="section-cta">
-                <a href="project/projects.html" class="btn btn-secondary">View All Projects</a>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <h2>Let's Work Together</h2>
-            <p>I'm always interested in hearing about new opportunities and collaborations.</p>
-            <div class="cta-buttons">
-                <a href="contact/contact.html" class="btn btn-primary">Contact Me</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/giacinto-fioravanti-b5aba1264/" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p class="copyright">&copy; 2025 Giacinto Fioravanti. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Simple navigation toggle for mobile
-        document.getElementById('navToggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
-</body>
+    </body>
 </html>
-
