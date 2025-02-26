@@ -418,11 +418,6 @@ section:not(:last-child)::after {
     gap: 0.75rem;
 }
 
-/* Project grid spacing */
-.project-grid {
-    margin: 3rem 0;
-}
-
 /* Footer spacing */
 .footer {
     padding: 3rem 2rem;
@@ -436,8 +431,10 @@ section:not(:last-child)::after {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 3rem; /* Increased from 2rem to match about-grid spacing */
+    padding: 2rem 0; /* Added padding to match other pages */
+    max-width: 1200px; /* Added max-width to match contact-grid */
+    margin: 0 auto;
 }
 
 /* Project Card Styling */
@@ -445,11 +442,12 @@ section:not(:last-child)::after {
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: visible; /* Changed from hidden to visible */
+    overflow: visible;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .project-card:hover {
@@ -528,6 +526,8 @@ section:not(:last-child)::after {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .project-grid {
+        gap: 2rem; /* Matches contact-grid responsive gap */
+        padding: 1rem 0;
         grid-template-columns: 1fr; /* Single column on mobile */
     }
     
