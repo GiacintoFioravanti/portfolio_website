@@ -1,46 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Projects</title>
-        <link rel="stylesheet" href="../aboutme/aboutme.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="../aboutme/aboutme.html">About Me</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
-                <img class="navimg" src="../Pictures/MyCourses Pic.jpg" alt="Headshot Picture">
-            </ul>
-        </nav>
-        <h1>Welcome to my projects!</h1>
-        <div class="container">
-            <div class="section">
-                <img src="../Pictures/comic.png" alt="Picture of a Comicbook">
-                <p> 
-                    In my software engineering design course, I collaborated with a team of four developers to build a comic book collection system. 
-                    It organizes comic books from a CSV file into various categories like author, publisher, volume, and series. 
-                    Users can create their own collections, stored in a PostgreSQL database. They can use the app as a guest with limited features or sign in for full access. 
-                    All user data is securely stored and accessible upon login. (Janurary 2024 - April 2024)
-                </p>
-            </div>
-            <div class="section">
-                <img src="../Pictures/nightclub.png" alt="Picture of a Nightclub">
-                <p>
-                    In my Web Engineering course, I created a web app to help nightclubs keep track of customer numbers efficiently. 
-                    It made sure they followed safety rules by connecting to a PostgreSQL database, storing maximum and current customer counts for each club. (October 2023 - December 2023)
-                </p>
-            </div>
-            <div class="section">
-                 <img src="../Pictures/sonar.png" alt="Highschool Football Picture">
-                 <p>
-                    In my free time I engineered a versatile sonar system by integrating Arduino boards and ultrasonic sensors. The system was tailored for seamless attachment to diverse objects upon detection. 
-                    This project was programmed using Arduino boards in C++ to accurately record distances and enable customized trigger responses upon object detection. 
-                    This project was created to solve the problem of overheating at a desk with a stationary fan, so my first use case was attaching a fan blade to the sonar 
-                    which tracks the user and provides constant airflow. (December 2020)
-                </p>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giacinto Fioravanti - Software Engineering Projects">
+    <title>Projects | Giacinto Fioravanti</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img class="nav-img" src="../Pictures/MyCourses Pic.jpg" alt="Giacinto Fioravanti">
+            <span class="brand-name">Giacinto Fioravanti</span>
         </div>
-    </body>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="../aboutme/aboutme.html">About Me</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>My Projects</h1>
+            <p class="tagline">Showcasing my journey in software engineering</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="projects-grid">
+
+            <!-- Real-Time Chat App Project -->
+            <div class="project-card">
+                <div class="project-video">
+                    <video controls>
+                        <source src="../Chat_App_Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-info">
+                    <h3>Real-Time Chat App</h3>
+                    <p>A full-stack real-time messaging app built with the MERN stack (MongoDB, Express, React, Node.js),
+                        Socket.io, and styled with TailwindCSS and Daisy UI. Features include JWT-based authentication and authorization, real-time messaging with Socket.io,
+                        online user status tracking, and global state management with Zustand.</p>
+                    <div class="project-tags">
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Socket.io</span>
+                        <span class="tag">TailwindCSS</span>
+                        <span class="tag">2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comic Book Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../Pictures/comic.png" alt="Comic Book Collection System" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <h3>Comic Book Collection System</h3>
+                    <p>In my software engineering design course, I collaborated with a team of four developers to build a comic book collection system. 
+                    It organizes comic books from a CSV file into various categories like author, publisher, volume, and series. 
+                    Users can create their own collections, stored in a PostgreSQL database.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Team Project</span>
+                        <span class="tag">2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nightclub Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../Pictures/nightclub.png" alt="Nightclub Management System" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <h3>Nightclub Management System</h3>
+                    <p>In my Web Engineering course, I created a web app to help nightclubs keep track of customer numbers efficiently. 
+                    It made sure they followed safety rules by connecting to a PostgreSQL database, storing maximum and current customer counts for each club.</p>
+                    <div class="project-tags">
+                        <span class="tag">Web Development</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sonar Project -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../Pictures/sonar.png" alt="Smart Sonar System" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <h3>Smart Sonar System</h3>
+                    <p>Engineered a versatile sonar system by integrating Arduino boards and ultrasonic sensors. The system was tailored for seamless attachment to diverse objects upon detection. 
+                    This project was programmed using Arduino boards in C++ to accurately record distances and enable customized trigger responses upon object detection.</p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Hardware</span>
+                        <span class="tag">2020</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/giacinto-fioravanti-b5aba1264/" target="_blank" rel="noopener" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2024 Giacinto Fioravanti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
